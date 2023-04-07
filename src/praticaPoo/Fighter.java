@@ -1,5 +1,5 @@
 package praticaPoo;
-public class Lutador{
+public class Fighter {
     private String name, nation, category;
     private double height, weight;
     private int age, victories, ties, defeats;
@@ -31,7 +31,7 @@ public class Lutador{
         this.setTies(this.getTies() + 1);
     }
 
-    public Lutador(String name, String nation, int age, double height, double weight, int victories, int ties, int defeats) {
+    public Fighter(String name, String nation, int age, double height, double weight, int victories, int ties, int defeats) {
         this.name = name;
         this.nation = nation;
         this.age = age;
@@ -127,7 +127,7 @@ public class Lutador{
 
     @Override
     public String toString() {
-        return "Lutador{" +
+        return "Lutador " +
                 "name='" + name + '\'' +
                 ", nation='" + nation + '\'' +
                 ", category='" + category + '\'' +
@@ -136,7 +136,6 @@ public class Lutador{
                 ", age=" + age +
                 ", victories=" + victories +
                 ", ties=" + ties +
-                ", defeats=" + defeats +
-                '}';
+                ", defeats=" + defeats;
     }
 }

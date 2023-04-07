@@ -2,13 +2,13 @@ package praticaPoo;
 
 import java.util.Random;
 
-public class Luta {
-    private Lutador challenged; //desafiado
-    private Lutador challenger; //desafiante
+public class Fight {
+    private Fighter challenged; //desafiado
+    private Fighter challenger; //desafiante
     private int rounds;
     private Boolean approved;
 
-    public void markFight(Lutador l1, Lutador l2) {
+    public void markFight(Fighter l1, Fighter l2) {
         if (l1.getCategory().equals(l2.getCategory()) && l1 != l2) {
             this.approved = true;
             this.challenged = l1;
@@ -55,16 +55,16 @@ public class Luta {
             System.out.println("Luta não pode acontecer");
         }
     }
-    public Lutador getChallenged() {
+    public Fighter getChallenged() {
         return challenged;
     }
-    public void setChallenged(Lutador challenged) {
+    public void setChallenged(Fighter challenged) {
         this.challenged = challenged;
     }
-    public Lutador getChallenger() {
+    public Fighter getChallenger() {
         return challenger;
     }
-    public void setChallenger(Lutador challenger) {
+    public void setChallenger(Fighter challenger) {
         this.challenger = challenger;
     }
 }
